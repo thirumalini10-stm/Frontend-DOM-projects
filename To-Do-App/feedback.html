@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do App</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+</head>
+<body>
+    <div class="navbar">Daily Planner App  <i class="fa-solid fa-calendar"></i>
+   <a href="/index.html" class="feedback-link">Back</a>
+    </div>
+
+<form name ="feedback">
+<div class="form-container">
+  <h2>Feedback Form</h2>
+
+  <div class = "form-group">
+      <label for="name">Full Name:</label>
+    <input type="text"  name ="name" id="name" placeholder="Enter Your Name" required >
+
+  </div>
+
+  <!-- Role selection -->
+  <div class="form-group ">
+    <label for="roles">Your Role:</label>
+    <div class="radio-group">
+      <label><input type="radio" name="role" id= "roles" value="student"> Student</label>
+      <label><input type="radio" name="role" id= "roles" value="professional"> Working Professional</label>
+      <label><input type="radio" name="role" id= "roles" value="expert"> Expert</label>
+      <label><input type="radio" name="role" id= "roles" value="others"> Others</label>
+    </div>
+  </div>
+
+  <!-- Feedback text -->
+  <div class="form-group">
+    <label for="feedback">Feedback:</label>
+    <textarea id="feedback" name="feedback" placeholder="Enter your feedback..." required></textarea>
+  </div>
+
+  <!-- Email -->
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" placeholder="xxx@abc.com"  required>
+  </div>
+
+  <!-- Comments -->
+  <div class="form-group">
+    <label for="comments">Comments:</label>
+    <textarea id="comments" name="comments" placeholder="Enter your comments..." required></textarea>
+  </div>
+
+  <!-- Terms -->
+  <div class="form-group checkbox">
+    <label for="checkbox"><input type="checkbox" id="checkbox" name="checkbox" required> I accept Terms and Conditions</label>
+  </div>
+
+  <!-- Submit -->
+  <button class="submit-btn">Submit</button>
+</div>
+
+</form>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="feedback.js"></script>
+</body>
+</html>
